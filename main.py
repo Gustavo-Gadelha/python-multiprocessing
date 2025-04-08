@@ -51,7 +51,7 @@ if __name__ == '__main__':
     log = manager.dict()
 
     motoboys = []
-    for n in range(5):
+    for n in range(3):
         motoboy = Process(target=deliver, args=(semaphore, deliveries, log, n))
         motoboys.append(motoboy)
         motoboy.start()
